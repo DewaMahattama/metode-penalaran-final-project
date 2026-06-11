@@ -111,7 +111,7 @@ else:
         else:
             res = st.session_state.results
             
-            m_col1, m_col2, m_col3, m_col4 = st.columns(4)
+            m_col1, m_col2, m_col3, m_col4 = st.columns([1, 1.6, 1, 1])
             p_diff = ((res['offered_price'] - res['final_price']) / res['final_price']) * 100
             
             with m_col1:
